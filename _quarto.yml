@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "my-website"
+  title: "Jordyn Scott"
   navbar:
     left:
       - href: index.qmd
@@ -12,7 +12,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: morph
     css: styles.css
     toc: true
 

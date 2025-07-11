@@ -1,5 +1,15 @@
 ---
-title: "my-website"
+title: "Jordyn Scott"
+image: images/IMG_2534.JPG
+about: 
+  template: trestles
+  links: 
+  - icon: envelope
+    text: Email
+    href: mailto:jscottcpp@gmail.com
+  - icon: linkedin
+    text: LinkedIn
+    href: https://www.linkedin.com/in/jordyn-scott-02ba28283/
 ---
 
 This is a Quarto website.
