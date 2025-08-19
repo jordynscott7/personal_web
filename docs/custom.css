@@ -1,0 +1,176 @@
+body {
+  background-color: lightblue;
+  color: black;
+}
+
+h1 {
+  color: black;
+}
+
+a {
+  color: darkcyan;
+}
+
+h2, h3, h4, h5, h6 {
+  color: black;
+}
+
+
+/*CHANGE ICON COLOR*/
+/* Style the entire clickable box */
+.about-link {
+  display: inline-block;
+  background-color: #f0f0f0;  /* Light gray background */
+  color: black !important;    /* Text color */
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 8px 8px 8px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style the icon itself */
+.about-link i {
+  margin-right: 8px;
+  color: black !important;    /* Icon color */
+}
+
+/* Hover effect */
+.about-link:hover {
+  background-color: darkcyan;  /* e.g., LinkedIn blue */
+  color: black !important;
+}
+
+.about-link:hover i {
+  color: black !important;
+}
+
+
+
+/*NAV BAR TEXT EDIT*/
+.navbar, 
+.navbar a, 
+.navbar-brand, 
+.navbar-nav .nav-link {
+  color: white !important;         /* Change to your desired color */
+}
+
+
+
+/*NAV BAR COLOR EDIT*/
+.navbar {
+  background-color: darkcyan !important;  /* Dark blue example */
+}
+
+
+
+/*HAMBURGER BAR EDIT*/
+.navbar-toggler {
+  border-color: white;  /* Optional: border around the icon */
+}
+
+/* The icon lines */
+.navbar-toggler-icon {
+  background-image: none;
+  width: 30px;
+  height: 3px;
+  background-color: white;  /* <-- This changes the bar color */
+  display: block;
+  position: relative;
+}
+
+/* Add multiple lines using pseudo-elements */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: white; /* Color of lines */
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -10px;
+}
+
+.navbar-toggler-icon::after {
+  top: 10px;
+}
+
+
+/*TOC COLOR EDIT*/
+/* Normal ToC link */
+nav.toc a {
+  color: black; /* or your base color */
+  text-decoration: none;
+}
+
+/* Hover effect */
+nav.toc a:hover {
+  color: darkcyan; /* your hover color (LinkedIn blue here) */
+  text-decoration: underline; /* optional */
+}
+
+}
+
+
+/*BORDER*/
+h1::after,
+h2::after,
+.section-title::after {
+  content: none !important;
+  border-bottom: none !important;
+  display: none !important;
+}
+
+h1, h2, .section-title {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+
+
+
+
+/*IMAGE HOVER*/
+.image-hover-container {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.image-hover-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.image-hover-caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.65);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 0.95rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.image-hover-container:hover img {
+  transform: scale(1.02);
+}
+
+.image-hover-container:hover .image-hover-caption {
+  opacity: 1;
+}
